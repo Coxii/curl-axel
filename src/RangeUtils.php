@@ -13,7 +13,7 @@ class RangeUtils
     public static function getDashedSlices($size, $sliceCount)
     {
         return array_map(function ($e) {
-            return implode($e, '-');
+            return implode('-',$e);
         }, self::getSlices($size, $sliceCount));
     }
 
